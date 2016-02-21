@@ -1,5 +1,7 @@
 package com.nuance.speechkitsample;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -18,11 +20,6 @@ import com.nuance.speechkit.RecognitionType;
 import com.nuance.speechkit.Session;
 import com.nuance.speechkit.Transaction;
 import com.nuance.speechkit.TransactionException;
-
-import android.content.Intent;
-import android.net.Uri;
-
-import java.util.regex.Pattern;
 
 
 /**
@@ -174,15 +171,19 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
             switch (em) {
                 case "HAPPY":
                     Log.i(TAG, "Happy");
+                    openVideo("Happy");
                     break;
                 case "SAD":
                     Log.i(TAG, "Sad");
+                    openVideo("Sad");
                     break;
                 case "LOVE":
                     Log.i(TAG, "In Love");
+                    openVideo("Love");
                     break;
                 case "ANGRY":
                     Log.i(TAG, "Angry");
+                    openVideo("Angry");
                     break;
                 default:
                     Log.i(TAG, "Bling");

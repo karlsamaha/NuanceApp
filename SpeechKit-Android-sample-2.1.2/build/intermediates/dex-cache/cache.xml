@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\classes-1b6cea708f98dbfcd22d5cc8138684f2cba68315.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jar="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-ba82e7c398ccb1059b178dc8ece737f8fc94c808.jar" />
+        <dex dex="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-d43efeddaef2d11f7ca1e2a9cbe70aa127ebce1b.jar" />
     </item>
     <item
-        jar="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\classes-ffea8f57a6aabd1092cdc9d8334676c9eceff81b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.nuance\speechkit\2.1.2\jars\classes.jar"
+        jar="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.nuance\speechkit\2.1.2\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="7da1ea483580ef49a040a38d6d26da185a1ebd0e">
-        <dex dex="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\classes-2d49e73454ba6e7a260469175dc1c855cb45ac30.jar" />
+        <dex dex="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\classes-ece4c17f6797b135bf6410b638a1a544823676a3.jar" />
     </item>
     <item
-        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jar="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\classes-2cd0685a4c6a787b6b2c678d812fc5f44f74efb7.jar" />
+    </item>
+    <item
+        jar="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\classes-cdae4631adf8e3e1e656bb5ef61acb51282fe5bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\paul__000\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="C:\Users\Karl S\Desktop\Nuance\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-6ededcc9b39f46fbcdd6efbd1a4d51bb6afd2a15.jar" />
+        <dex dex="C:\Users\paul__000\Documents\GitHub\NuanceApp\SpeechKit-Android-sample-2.1.2\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-18686a652c24b50370ef44c98fae4e971c1f479e.jar" />
     </item>
 
 </items>

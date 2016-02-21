@@ -42,19 +42,19 @@
       <file leaf-file-name="ASRActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nuance/speechkitsample/ASRActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.7568307">
-              <caret line="167" column="40" selection-start-line="167" selection-start-column="40" selection-end-line="167" selection-end-column="40" />
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7021#7022#0" expanded="true" />
-                <element signature="e#7068#7069#0" expanded="true" />
-                <element signature="e#7509#7743#0" expanded="true" />
-                <element signature="e#7742#7743#0" expanded="true" />
-                <element signature="e#7845#7846#0" expanded="true" />
-                <element signature="e#7878#7879#0" expanded="true" />
-                <element signature="e#8439#8483#0" expanded="true" />
-                <element signature="e#8572#8616#0" expanded="true" />
-                <element signature="e#8706#8751#0" expanded="true" />
+                <element signature="e#7478#7479#0" expanded="true" />
+                <element signature="e#7525#7526#0" expanded="true" />
+                <element signature="e#7966#8200#0" expanded="true" />
+                <element signature="e#8199#8200#0" expanded="true" />
+                <element signature="e#8302#8303#0" expanded="true" />
+                <element signature="e#8335#8336#0" expanded="true" />
+                <element signature="e#8896#8940#0" expanded="true" />
+                <element signature="e#9029#9073#0" expanded="true" />
+                <element signature="e#9163#9208#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nuance/speechkitsample/Emotion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,7 +101,13 @@
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#1263#1282#0" expanded="false" />
+                <element signature="e#1447#1463#0" expanded="false" />
+                <element signature="e#2076#2106#0" expanded="false" />
+                <element signature="e#3671#3695#0" expanded="false" />
+                <element signature="e#3951#3977#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2078,14 +2084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nuance/speechkitsample/Emotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nuance/speechkitsample/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2139,25 +2137,39 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1263#1282#0" expanded="false" />
+            <element signature="e#1447#1463#0" expanded="false" />
+            <element signature="e#2076#2106#0" expanded="false" />
+            <element signature="e#3671#3695#0" expanded="false" />
+            <element signature="e#3951#3977#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nuance/speechkitsample/Emotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nuance/speechkitsample/ASRActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.7568307">
-          <caret line="167" column="40" selection-start-line="167" selection-start-column="40" selection-end-line="167" selection-end-column="40" />
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7021#7022#0" expanded="true" />
-            <element signature="e#7068#7069#0" expanded="true" />
-            <element signature="e#7509#7743#0" expanded="true" />
-            <element signature="e#7742#7743#0" expanded="true" />
-            <element signature="e#7845#7846#0" expanded="true" />
-            <element signature="e#7878#7879#0" expanded="true" />
-            <element signature="e#8439#8483#0" expanded="true" />
-            <element signature="e#8572#8616#0" expanded="true" />
-            <element signature="e#8706#8751#0" expanded="true" />
+            <element signature="e#7478#7479#0" expanded="true" />
+            <element signature="e#7525#7526#0" expanded="true" />
+            <element signature="e#7966#8200#0" expanded="true" />
+            <element signature="e#8199#8200#0" expanded="true" />
+            <element signature="e#8302#8303#0" expanded="true" />
+            <element signature="e#8335#8336#0" expanded="true" />
+            <element signature="e#8896#8940#0" expanded="true" />
+            <element signature="e#9029#9073#0" expanded="true" />
+            <element signature="e#9163#9208#0" expanded="true" />
           </folding>
         </state>
       </provider>

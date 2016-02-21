@@ -20,21 +20,21 @@ public  class Emotion {
             happyCounter++;
 
         //ANGRY
-        Pattern pattern2 = Pattern.compile("angry|mad|fuck|piss|bitch|ass|cunt|upset| irate| mad|" +
-                " annoyed| cross| vexed| irritated| indignant");
+        Pattern pattern2 = Pattern.compile("angry|mad|fuck|piss|bitch|ass|cunt|upset|irate|mad|" +
+                " annoyed|cross|vexed|irritated|indignant|irritated|");
         if (pattern2.matcher(text).find())
             angryCounter++;
 
         //LOVE
-        Pattern pattern3 = Pattern.compile("love|sweet|sex|bliss|infatuated|loving|lover| crush | " +
-                "romantic | romance");
+        Pattern pattern3 = Pattern.compile("love|sweet|sex|bliss|infatuated|loving|lover|crush| " +
+                "romantic|romance|horny| ");
         if (pattern3.matcher(text).find())
             loveCounter++;
 
         //SAD
-        Pattern pattern4 = Pattern.compile("sad | unhappy| sorrowful| dejected| depressed| downcast| " +
-                "miserable| down| despondent| despairing| disconsolate| desolate| wretched| glum| " +
-                "gloomy| doleful| dismal| melancholy| mournful| woebegone| forlorn| crestfallen| " +
+        Pattern pattern4 = Pattern.compile("sad|unhappy|sorrowful|dejected|depressed|downcast| " +
+                "miserable|down|despondent|despairing|disconsolate|desolate|wretched|glum| " +
+                "gloomy|doleful|dismal|melancholy|mournful|woebegone|forlorn|crestfallen| " +
                 "heartbroken| inconsolable");
         if (pattern4.matcher(text).find())
             sadCounter++;
@@ -47,12 +47,12 @@ public  class Emotion {
         if(maxCount ==0)
             return "BLING";
         if(maxCount == angryCounter)
-           return "ANGRY";
+            return "ANGRY";
         if(maxCount == sadCounter)
             return "SAD";
         if(maxCount == loveCounter)
             return "LOVE";
-       else
+        else
             return "HAPPY";
     }
 

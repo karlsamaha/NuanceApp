@@ -41,6 +41,13 @@ public  class Emotion {
 
         //Method max() below
         maxCount=max(angryCounter, sadCounter, loveCounter, happyCounter);
+        System.out.println(maxCount + "mum");
+        System.out.println(angryCounter + "mum");
+        System.out.println(sadCounter + "mum");
+        System.out.println(loveCounter + "mum");
+        System.out.println(happyCounter + "mum");
+
+
 
 
         //Associate Counter with emotion

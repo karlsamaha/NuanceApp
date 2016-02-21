@@ -12,45 +12,53 @@ public  class Emotion {
         int happyCounter = 0, sadCounter = 0, angryCounter = 0, loveCounter = 0, maxCount = 0;
 
         //HAPPY
-        Pattern pattern1 = Pattern.compile("happy|cheerful | cheery| merry| joyful| jovial| jolly| " +
-                "jocular| gleeful| carefree| untroubled| delighted| smiling| beaming| grinning| " +
-                "in good spirits| in a good mood| lighthearted| pleased| contented| content| " +
-                "satisfied| gratified| buoyant| radiant| sunny| blithe| joyous| beatific");
-        if (pattern1.matcher(text).find())
-            happyCounter++;
+        String[] matches = new String[] {"merry", "cheery", "happy", "cheerful", "joyful", "jovial",
+                "jolly", "jocular",  "gleeful", "carefree", "untroubled", "delighted", "smiling", "beaming", "grinning",
+              "good", "lighthearted", "pleased", "contented", "content", "satisfied", "gratified",
+               "buoyant", "radiant", "sunny", "blithe", "joyous", "beatific", "wonderful"};
+
+        for (String s : matches) {
+            if (text.contains(s)) {
+                happyCounter++;
+                System.out.println(happyCounter);
+            }
+        }
 
         //ANGRY
-        Pattern pattern2 = Pattern.compile("angry|mad|fuck|piss|bitch|ass|cunt|upset|irate|mad|" +
-                " annoyed|cross|vexed|irritated|indignant|irritated|");
-        if (pattern2.matcher(text).find())
-            angryCounter++;
+        matches = new String[]{"angry","mad","bitch","asshole","cunt","upset","irate","mad",
+                "annoyed","cross","vexed","irritated","indignant","appalled"};
+        for (String s : matches) {
+            if (text.contains(s)) {
+                angryCounter++;
+                System.out.println(angryCounter);
+            }
+        }
 
         //LOVE
-        Pattern pattern3 = Pattern.compile("love|sweet|sex|bliss|infatuated|loving|lover|crush| " +
-                "romantic|romance|horny| ");
-        if (pattern3.matcher(text).find())
-            loveCounter++;
+        matches = new String[]{"love","sweet","sexy","bliss","infatuated","loving","lover","crush",
+                "romantic","romance","horny"};
+        for (String s : matches) {
+            if (text.contains(s)) {
+                loveCounter++;
+                System.out.println(loveCounter);
+            }
+        }
 
         //SAD
-        Pattern pattern4 = Pattern.compile("sad|unhappy|sorrowful|dejected|depressed|downcast| " +
-                "miserable|down|despondent|despairing|disconsolate|desolate|wretched|glum| " +
-                "gloomy|doleful|dismal|melancholy|mournful|woebegone|forlorn|crestfallen| " +
-                "heartbroken| inconsolable");
-        if (pattern4.matcher(text).find())
-            sadCounter++;
+        matches = new String[]{"sad","unhappy","sorrowful","dejected","depressed","downcast",
+                "miserable","down","despondent","despairing","disconsolate","desolate","wretched","glum",
+                "gloomy","doleful","dismal","melancholy","mournful","woebegone","forlorn","crestfallen",
+                "heartbroken","inconsolable"};
+        for (String s : matches) {
+            if (text.contains(s)) {
+                sadCounter++;
+                System.out.println(sadCounter);
+            }
+        }
 
-        //Method max() below
         maxCount=max(angryCounter, sadCounter, loveCounter, happyCounter);
-        System.out.println(maxCount + "mum");
-        System.out.println(angryCounter + "mum");
-        System.out.println(sadCounter + "mum");
-        System.out.println(loveCounter + "mum");
-        System.out.println(happyCounter + "mum");
+        System.out.println("max is "+maxCount);
 
-
-
-
-        //Associate Counter with emotion
         if(maxCount ==0)
             return "BLING";
         if(maxCount == angryCounter)
@@ -63,6 +71,10 @@ public  class Emotion {
             return "HAPPY";
     }
 
+
+//Associate Counter with emotion
+
+
     //Need to compute the max of all counters
     public static Integer max(Integer... vals) {
         Integer ret = null;
@@ -74,3 +86,4 @@ public  class Emotion {
         return ret;
     }
 }
+

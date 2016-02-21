@@ -69,10 +69,10 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
     private Transaction recoTransaction;
     private State state = State.IDLE;
     
-    private String[] happyVideo = {"uxpDa-c-4Mc","I2bBZvSPpOo","RubBzkZzpUA","cimoNqiulUE","vkSFh6HMUtQ"};
-    private String[] sadVideo = {"-zzP29emgpg","GxgqpCdOKak","Dxy574tBK5A","s2fmEZ3-W5I","OCWyR436n1Q"};
-    private String[] loveVideo = {"QgL33XNLhu0","2lTB1pIg1y0","1Ldzm7KGECI","olG0Nm0auK0","TRLSQDCkcaA"};
-    private String[] angryVideo ={"19DCJ73y9T0","bY4OJBGBOY4","qxjxEFm9-vk"};
+    private String[] happyVideo = {"eDuRoPIOBjE","FeAcke_Zay8&index=11&list=PLB7E80B2F70A9A8CD","cimoNqiulUE","uxpDa-c-4Mc","I2bBZvSPpOo","4cfoLDnNGnY&list=PL4TrGu5rwzH9X4PdkQ_84FTTn8i__U2Ou","RubBzkZzpUA","cimoNqiulUE","vkSFh6HMUtQ", "4U8FzehonsE", "2lTB1pIg1y0"};
+    private String[] sadVideo = {"DcQzATCJpBA","-zzP29emgpg","GxgqpCdOKak","Dxy574tBK5A","s2fmEZ3-W5I","OCWyR436n1Q", "8Wl-HSl386k", "T9M2VAvpTXE&list=PLB7E80B2F70A9A8CD&index=3"};
+    private String[] loveVideo = {"QgL33XNLhu0","Xyv4Bjja8yc","1Ldzm7KGECI","olG0Nm0auK0","TRLSQDCkcaA", "watch?v=_iXN2sKr91s&list=PLB7E80B2F70A9A8CD", "bJPGUHqs9ZM&index=10&list=PLB7E80B2F70A9A8CD"};
+    private String[] angryVideo ={"qfbPrCiReNw&index=12&list=PLB7E80B2F70A9A8CD","19DCJ73y9T0","bY4OJBGBOY4","qxjxEFm9-vk", "79AR0VC5wCA&list=PL4TrGu5rwzH9X4PdkQ_84FTTn8i__U2Ou&index=4", };
 
 
     @Override
@@ -328,16 +328,16 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
         String id;
 
         if (emotion.equals("Happy")) {
-            id = happyVideo[(int) Math.floor(Math.random() * 5)];
+            id = happyVideo[(int) Math.floor(Math.random() * happyVideo.length)];
         }
         if (emotion.equals("Sad")) {
-            id = sadVideo[(int) Math.floor(Math.random() * 5)];
+            id = sadVideo[(int) Math.floor(Math.random() * sadVideo.length)];
         }
         if (emotion.equals("Love")) {
-            id = loveVideo[(int) Math.floor(Math.random() * 5)];
+            id = loveVideo[(int) Math.floor(Math.random() * loveVideo.length)];
         }
         if (emotion.equals("Angry")){
-            id = angryVideo[(int) Math.floor(Math.random() *5)];
+            id = angryVideo[(int) Math.floor(Math.random() * angryVideo.length)];
         }
         else{
             id = "uxpDa-c-4Mc";
@@ -349,27 +349,27 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
 
     }
 
-//    public static void main(String[] args) {
-//
-//        String em = Emotion.getEmotion("happy sad sad love happy depressed love love loving");
-//
-//        switch (em) {
-//            case "HAPPY":
-//                System.out.printf("happy");
-//                break;
-//            case "SAD":
-//                System.out.printf("Sad");
-//                break;
-//            case "LOVE":
-//                System.out.printf("Love");
-//                break;
-//            case "ANGRY":
-//                System.out.printf("Angry");
-//                break;
-//            default:
-//                System.out.printf("Bling");
-//        }
-//    }
+    public static void main(String[] args) {
+
+        String em = Emotion.getEmotion("happy merry cheery angry sad ");
+
+        switch (em) {
+            case "HAPPY":
+                System.out.printf("happy");
+                break;
+            case "SAD":
+                System.out.printf("Sad");
+                break;
+            case "LOVE":
+                System.out.printf("Love");
+                break;
+            case "ANGRY":
+                System.out.printf("Angry");
+                break;
+            default:
+                System.out.printf("Bling");
+        }
+    }
 
 
 }

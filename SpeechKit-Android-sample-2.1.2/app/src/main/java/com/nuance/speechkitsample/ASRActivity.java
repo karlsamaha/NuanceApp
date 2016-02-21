@@ -19,6 +19,9 @@ import com.nuance.speechkit.Session;
 import com.nuance.speechkit.Transaction;
 import com.nuance.speechkit.TransactionException;
 
+import android.content.Intent;
+import android.net.Uri;
+
 import java.util.regex.Pattern;
 
 
@@ -68,6 +71,11 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
     private Session speechSession;
     private Transaction recoTransaction;
     private State state = State.IDLE;
+    
+    private String[] happyVideo = {"uxpDa-c-4Mc","I2bBZvSPpOo","RubBzkZzpUA","cimoNqiulUE","vkSFh6HMUtQ"};
+    private String[] sadVideo = {"-zzP29emgpg","GxgqpCdOKak","Dxy574tBK5A","s2fmEZ3-W5I","OCWyR436n1Q"};
+    private String[] loveVideo = {"QgL33XNLhu0","2lTB1pIg1y0","1Ldzm7KGECI","olG0Nm0auK0","TRLSQDCkcaA"};
+    private String[] angryVideo ={"19DCJ73y9T0","bY4OJBGBOY4","qxjxEFm9-vk"};
 
 
     @Override
@@ -313,6 +321,31 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
             return DetectionType.None;
         }
         return null;
+    }
+    
+    public void openVideo(String emotion) {
+        String id;
+
+        if (emotion.equals("Happy")) {
+            id = happyVideo[(int) Math.floor(Math.random() * 5)];
+        }
+        if (emotion.equals("Sad")) {
+            id = sadVideo[(int) Math.floor(Math.random() * 5)];
+        }
+        if (emotion.equals("Love")) {
+            id = loveVideo[(int) Math.floor(Math.random() * 5)];
+        }
+        if (emotion.equals("Angry")){
+            id = angryVideo[(int) Math.floor(Math.random() *5)];
+        }
+        else{
+            id = "uxpDa-c-4Mc";
+        }
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube://" + id));
+        startActivity(intent);
+
+
     }
 
 //    public static void main(String[] args) {

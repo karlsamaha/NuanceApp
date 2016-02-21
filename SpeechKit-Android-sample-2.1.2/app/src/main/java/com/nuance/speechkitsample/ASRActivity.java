@@ -2,6 +2,7 @@ package com.nuance.speechkitsample;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +18,8 @@ import com.nuance.speechkit.RecognitionType;
 import com.nuance.speechkit.Session;
 import com.nuance.speechkit.Transaction;
 import com.nuance.speechkit.TransactionException;
+
+import java.util.regex.Pattern;
 
 
 /**
@@ -44,6 +47,8 @@ import com.nuance.speechkit.TransactionException;
  * Copyright (c) 2015 Nuance Communications. All rights reserved.
  */
 public class ASRActivity extends DetailActivity implements View.OnClickListener {
+
+    private final String TAG = "myApp";
 
     private Audio startEarcon;
     private Audio stopEarcon;
@@ -155,6 +160,27 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
         @Override
         public void onRecognition(Transaction transaction, Recognition recognition) {
             logs.append("\nonRecognition: " + recognition.getText());
+
+            String em = Emotion.getEmotion(recognition.getText());
+
+            switch (em) {
+                case "HAPPY":
+                    Log.i(TAG, "Happy");
+                    break;
+                case "SAD":
+                    Log.i(TAG, "Sad");
+                    break;
+                case "LOVE":
+                    Log.i(TAG, "In Love");
+                    break;
+                case "ANGRY":
+                    Log.i(TAG, "Angry");
+                    break;
+                default:
+                    Log.i(TAG, "Bling");
+
+//Notification of a successful transaction. Nothing to do here.
+            }
 
             //We have received a transcription of the users voice from the server.
             setState(State.IDLE);
@@ -288,4 +314,10 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
         }
         return null;
     }
+
+
+
+
+
+
 }

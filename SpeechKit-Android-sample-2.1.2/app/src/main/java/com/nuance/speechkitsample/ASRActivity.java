@@ -174,15 +174,19 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
             switch (em) {
                 case "HAPPY":
                     Log.i(TAG, "Happy");
+                    openVideo("Happy");
                     break;
                 case "SAD":
                     Log.i(TAG, "Sad");
+                    openVideo("Sad");
                     break;
                 case "LOVE":
                     Log.i(TAG, "In Love");
+                    openVideo("Love");
                     break;
                 case "ANGRY":
                     Log.i(TAG, "Angry");
+                    openVideo("Angry");
                     break;
                 default:
                     Log.i(TAG, "Bling");

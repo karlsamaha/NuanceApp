@@ -48,7 +48,7 @@ import java.util.regex.Pattern;
  */
 public class ASRActivity extends DetailActivity implements View.OnClickListener {
 
-    private final String TAG = "myApp";
+    private static final String TAG = "myApp";
 
     private Audio startEarcon;
     private Audio stopEarcon;
@@ -315,9 +315,27 @@ public class ASRActivity extends DetailActivity implements View.OnClickListener 
         return null;
     }
 
-
-
-
+//    public static void main(String[] args) {
+//
+//        String em = Emotion.getEmotion("happy sad sad love happy depressed love love loving");
+//
+//        switch (em) {
+//            case "HAPPY":
+//                System.out.printf("happy");
+//                break;
+//            case "SAD":
+//                System.out.printf("Sad");
+//                break;
+//            case "LOVE":
+//                System.out.printf("Love");
+//                break;
+//            case "ANGRY":
+//                System.out.printf("Angry");
+//                break;
+//            default:
+//                System.out.printf("Bling");
+//        }
+//    }
 
 
 }

@@ -7,13 +7,12 @@ import java.util.regex.Pattern;
  */
 public  class Emotion {
 
-
     public static  String getEmotion(String text) {
 
         int happyCounter = 0, sadCounter = 0, angryCounter = 0, loveCounter = 0, maxCount = 0;
 
         //HAPPY
-        Pattern pattern1 = Pattern.compile("cheerful | cheery| merry| joyful| jovial| jolly| " +
+        Pattern pattern1 = Pattern.compile("happy|cheerful | cheery| merry| joyful| jovial| jolly| " +
                 "jocular| gleeful| carefree| untroubled| delighted| smiling| beaming| grinning| " +
                 "in good spirits| in a good mood| lighthearted| pleased| contented| content| " +
                 "satisfied| gratified| buoyant| radiant| sunny| blithe| joyous| beatific");

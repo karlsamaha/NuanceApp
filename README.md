@@ -1,3 +1,3 @@
 # NuanceApp
 
-Used Nuance's voice recognition API to build an application that can read a person's emotion from a sentence and opens up a Drake youtube video pertaining to that emotion
+In a team of 3, used Nuance's voice recognition API to build an application that analyzes a person's mood from a sentence and opens up a youtube video related to the mood detected.
